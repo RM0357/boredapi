@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="rc1.bored.BoredApplicationTests" tests="5" skipped="0" failures="0" errors="0" timestamp="2023-07-30T20:11:12" hostname="rms-MacBook-Pro.fritz.box" time="2.462">
+  <properties/>
+  <testcase name="testGetMethodWith2Filters()" classname="rc1.bored.BoredApplicationTests" time="1.617"/>
+  <testcase name="testGet()" classname="rc1.bored.BoredApplicationTests" time="0.208"/>
+  <testcase name="testGetSpecificActivityWithKey()" classname="rc1.bored.BoredApplicationTests" time="0.222"/>
+  <testcase name="testGetting200okResponse()" classname="rc1.bored.BoredApplicationTests" time="0.208"/>
+  <testcase name="testGetEmptyResultWhenKeyDoesntExist()" classname="rc1.bored.BoredApplicationTests" time="0.204"/>
+  <system-out><![CDATA[22:11:13.572 [Test worker] INFO rc1.bored.commands.BoredCommands -- Adding &
+22:11:14.280 [Test worker] INFO org.springframework.shell.command.invocation.InvocableShellMethod -- Received data: BoredActivity(activity=Play a game of tennis with a friend, type=social, participants=2, price=0.1, link=, key=1093640, accessibility=0.4)
+Received data: Play a game of tennis with a friend
+22:11:14.287 [Test worker] INFO rc1.bored.commands.BoredCommands -- Adding &
+22:11:14.492 [Test worker] INFO org.springframework.shell.command.invocation.InvocableShellMethod -- Received data: BoredActivity(activity=Go swimming with a friend, type=social, participants=2, price=0.1, link=, key=1505028, accessibility=0.1)
+Received data: Go swimming with a friend
+22:11:14.715 [Test worker] INFO org.springframework.shell.command.invocation.InvocableShellMethod -- Received data: BoredActivity(activity=Write a handwritten letter to somebody, type=social, participants=1, price=0.1, link=, key=2277801, accessibility=0.8)
+Received data: Write a handwritten letter to somebody
+200 OK
+22:11:15.129 [Test worker] INFO org.springframework.shell.command.invocation.InvocableShellMethod -- Received data: BoredActivity(activity=null, type=null, participants=0, price=0.0, link=null, key=0, accessibility=0.0)
+Received data: null
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

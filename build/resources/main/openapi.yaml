@@ -1,0 +1,69 @@
+openapi: 3.0.0
+info:
+  title: My Spring Shell API
+  version: 1.0.0
+
+servers:
+  - url: http://localhost:8080  # Replace with the appropriate URL
+
+paths:
+  /get:
+    get:
+      summary: Retrieve a random BoredActivity
+      operationId: Shell Command /get
+      parameters:
+        - in: query
+          name: --t
+          schema:
+            type: string
+          description: --t returns bored activity of some type like :social, music, recreational
+        - in: query
+          name: --a
+          schema:
+            type: string
+          description: Accessibility of the activity
+        - in: query
+          name: --p
+          schema:
+            type: string
+          description: Number of participants required
+        - in: query
+          name: --c
+          schema:
+            type: string
+          description: Cost of the activity
+        - in: query
+          name: --k
+          schema:
+            type: string
+          description: Returns activity with a specific key
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BoredActivity'
+
+components:
+  schemas:
+    BoredActivity:
+      type: object
+      properties:
+        type:
+          type: string
+        accessibility:
+          type: string
+        participants:
+          type: string
+        cost:
+          type: string
+        key:
+          type: string
+
+
+
+
+
+#
+##openapi-generator generate -i opentest.yaml -g html -o ./
